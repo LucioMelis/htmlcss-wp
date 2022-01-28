@@ -4,8 +4,7 @@
     box-sizing: border-box;
 }
 .container{
-    width: 70%;
-    height: 700px;
+    width: 80%;
     background-color: white;
     margin: 20px auto;
 }
@@ -60,27 +59,44 @@ h2{
     font-size: 30px;
 }
 .second{
-    height: 700px;
-    background-color: #0884fc;
     margin-bottom: 2.5%;
 }
-.float-img-left{
-    background-image: url(../img/img-1.jpg);
-    height: 200px;
-}
-.float-img-center{
-    background-image: url(../img/banner-2.jpg);
-    height: 200px;
-}
-/* ho creato una classe generale per dare il colore ai testi grigi */
-.grigio{
-    color: #9a9a9a;
-}
+/* clearfix per gli elementi flottati dopo aver tolto le altezze */
 .clearfix::after{
     content: "";
     clear: both;
     display: table;
 }
+/* selettore avanzato caratteristiche float-img  */
+.float-img-center, .float-img-left, .float-img-right{
+    height: 200px;
+    border-radius: 10px;
+    background-position: center;
+}
+/* sezione immagine float1  */
+.float-img-left{
+    background-image: url(../img/img-1.jpg);
+    
+}
+/* sezione immagine float2 */
+.float-img-center{
+    background-image: url(../img/banner-2.jpg);
+}
+/* sezione immagine float3  */
+.float-img-right{
+    background-image: url(../img/img-3.jpg);
+}
+.background-float{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* ho creato una classe generale per dare il colore ai testi grigi */
+.grigio{
+    color: #9a9a9a;
+}
+
 .float1, .float2, .float3{
     margin-top: 1%;
     margin-bottom: 1%;
@@ -88,24 +104,17 @@ h2{
 
 .float1{
     float: left;
-    background-color: #abcfe7;
-    height: 90%;
     width: 20%;
     margin-top: 1%;
 }
 .float2{
     float: left;
-    background-color: #abcfe7;
-    height: 90%;
     width: 56%;
-    margin-top: 1%;
     margin-left: 2%;
     margin-right: 2%;
 }
 .float3{
-    background-color: #abcfe7;
     float: left;
-    height: 90%;
     width: 20%;
     margin-top: 1%;
 }
