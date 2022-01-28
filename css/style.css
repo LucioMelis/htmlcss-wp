@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 70%;
+    height: 700px;
+    background-color: white;
+    margin: 20px auto;
+}
+header{
+    height: 12.5%;
+    background-color: rgb(190, 78, 190);
+    margin-bottom: 2.5%;
+}
+.first{
+    height: 20%;
+    background-color: #e1d67a;
+    margin-bottom: 2.5%;
+}
+.section{
+    height: 10%;
+    background-color: #abcfe7;
+}
+.second{
+    height: 40%;
+    background-color: #0884fc;
+    margin-bottom: 2.5%;
+}
+/* Regola per delimitare l'altezza del contenuto, ma lo abbiamo già dato nel contenitore */
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+footer{
+    height: 10%;
+    background-color: #8801fe;
+}
+.float1{
+    float: left;
+    background-color: #abcfe7;
+    height: 90%;
+    width: 33%;
+    margin-top: 1%;
+    margin-right: 2%;
+}
+.float2{
+    float: left;
+    background-color: #abcfe7;
+    height: 90%;
+    width: 33%;
+    margin-top: 1%;
+    margin-right: 2%;
+}
+.float3{
+    background-color: #abcfe7;
+    float: left;
+    height: 90%;
+    width: 30%;
+    margin-top: 1%;
+}
